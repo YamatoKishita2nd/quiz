@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クイズ</title>
+  <meta name="description" content="敬語に関するクイズです。">
+  <link rel="shortcut icon" href="images/capital_q.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/common.js" defer></script>
+</head>
+<body class="quiz_body">
+  <header class="header">
+    <div class="header_title">
+      敬語クイズ！
+    </div>
+    <div class="sp_menu">
+      <span class="material-icons" id="open">drag_handle</span>
+    </div>
+    <div class="overlay">
+      <div class="ovrelay_header header_logo">
+        <img src="images/logo.svg" alt="">
+        <span class="material-icons" id="close">close</span>
+      </div>
+      <div class="overlay_link">
+        <ul class="overlay_link_list">
+          <li><a href="./index.html" target="_blank">クイズ</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main_hero">
+      <picture class="main_hero_pct">
+        <img src="images/school_kyoushitsu_tsukue_hanareru.png" alt="学習中写真" class="main_hero_pct_img">
+      </picture>
+      <div class="main_hero_container">
+        <div class="main_hero_container_string">
+          <div class="main_hero_container_string_text">集中！</div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="temp" class="main_quiz temp">
+      <template id="template" class="main_quiz">
+        <div id="quiz" class="quiz js-quiz">
+          <div class="question">
+            <h2 class="question_title">
+              <span class="question_title_box"></span>
+              <span class="question_title_text"></span>
+            </h2>
+            <picture class="question_pct">
+            </picture>
+          </div>
+          <div class="answer">
+            <span class="answer_box">A</span>
+            <ul class="answer_list">
+              <li class="answer_list_item">
+                <button class="answer_list_item_btn answer_list_item_btn_1 js-answer">
+                </button>
+              </li>
+              <li class="answer_list_item">
+                <button class="answer_list_item_btn answer_list_item_btn_2 js-answer"> 
+                </button>
+              </li>
+              <li class="answer_list_item">
+                <button class="answer_list_item_btn answer_list_item_btn_3 js-answer">
+                </button>
+              </li>
+            </ul>
+            <div class="answer_correct js-answerBox">
+              <p class="answer_correct_title js-answerTitle"></p>
+              <p class="answer_correct_content">
+                <span class="answer_correct_content_label">A</span>
+                <span class="js-answerText"></span>
+              </p>
+            </div>
+          </div>
+          <blockquote class="quote"></blockquote>
+        </div>
+      </template>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer_copyright">
+      <small lang="en">&copy;Yamato Kishita</small>
+    </div>
+  </footer>
+</body>
+</html>
